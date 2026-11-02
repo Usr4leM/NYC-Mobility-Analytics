@@ -14,8 +14,12 @@ data/
 *.duckdb
 *.duckdb.wal
 
-# DuckDB temporary files
+# DuckDB temporary and infrastructure files
+memory
+**/memory
+.tmp/
 *.tmp
+*.db.tmp
 
 
 # ==================================
