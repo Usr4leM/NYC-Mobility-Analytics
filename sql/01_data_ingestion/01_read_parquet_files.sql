@@ -14,10 +14,10 @@
  .read sql/01_data_ingestion/01_read_parquet_files.sql
 
  RUNTIME CONFIGURATION:
- .echo on  -> Display executed commands.
  .timer on -> Measure query execution time.
  .bail on  -> Stop execution on SQL errors.
- .log      -> Record session activity.
+ .log      -> Record execution output in a log file.
+ .echo on  -> Display executed commands.
 =================================================================
 */
 
@@ -62,6 +62,10 @@ FROM read_parquet(
 )
 LIMIT 10;
 
-.log stderr
+-- =========================================================
+-- RUNTIME ENVIRONMENT CLEANUP
+-- =========================================================
+
+.log off
 .echo off
 .timer off

@@ -15,10 +15,10 @@
  .read sql/01_data_ingestion/02_create_raw_views.sql
 
  RUNTIME CONFIGURATION:
- .echo on  -> Display executed commands.
  .timer on -> Measure query execution time.
  .bail on  -> Stop execution on SQL errors.
- .log      -> Record session activity.
+ .log      -> Record execution output in a log file.
+ .echo on  -> Display executed commands.
 =================================================================
 */
 
@@ -82,6 +82,10 @@ ORDER BY table_name;
 SELECT 'Data Ingestion Completed Successfully' AS ingestion_status,
         current_timestamp AS completion_time;
 
-.log stderr
+-- =========================================================
+-- RUNTIME ENVIRONMENT CLEANUP
+-- =========================================================
+
+.log off
 .echo off
 .timer off
