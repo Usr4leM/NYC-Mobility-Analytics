@@ -14,9 +14,8 @@
  .read sql/01_data_ingestion/01_read_parquet_files.sql
 
  RUNTIME CONFIGURATION:
- .timer on -> Measure query execution time.
  .bail on  -> Stop execution on SQL errors.
- .log      -> Record execution output in a log file.
+ .timer on -> Measure query execution time.
  .echo on  -> Display executed commands.
 =================================================================
 */
@@ -25,9 +24,8 @@
 -- RUNTIME ENVIRONMENT CONFIGURATION
 -- ==============================================================
 
-.timer on
 .bail on
-.log logs/data_ingestion/read_parquet_files.log
+.timer on
 .echo on
 
 -- =========================================================
@@ -66,6 +64,6 @@ LIMIT 10;
 -- RUNTIME ENVIRONMENT CLEANUP
 -- =========================================================
 
-.log off
 .echo off
 .timer off
+.bail off
