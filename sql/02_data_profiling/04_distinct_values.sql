@@ -15,9 +15,8 @@
  .read sql/02_data_profiling/04_distinct_values.sql
 
  RUNTIME CONFIGURATION:
- .timer on -> Measure query execution time.
  .bail on  -> Stop execution on SQL errors.
- .log      -> Record execution output in a log file.
+ .timer on -> Measure query execution time.
  .echo on  -> Display executed commands.
 =================================================================
 */
@@ -26,9 +25,8 @@
 -- RUNTIME ENVIRONMENT CONFIGURATION
 -- ==============================================================
 
-.timer on
 .bail on
-.log logs/data_profiling/distinct_values.log
+.timer on
 .echo on
 
 -- =========================================================
@@ -134,6 +132,6 @@ ORDER BY
 -- RUNTIME ENVIRONMENT CLEANUP
 -- =========================================================
 
-.log off
 .echo off
 .timer off
+.bail off

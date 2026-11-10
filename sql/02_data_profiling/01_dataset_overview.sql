@@ -14,9 +14,8 @@
  .read sql/02_data_profiling/01_dataset_overview.sql
 
  RUNTIME CONFIGURATION:
- .timer on -> Measure query execution time.
  .bail on  -> Stop execution on SQL errors.
- .log      -> Record execution output in a log file.
+ .timer on -> Measure query execution time.
  .echo on  -> Display executed commands.
 =================================================================
 */
@@ -25,9 +24,8 @@
 -- RUNTIME ENVIRONMENT CONFIGURATION
 -- ==============================================================
 
-.timer on
 .bail on
-.log logs/data_profiling/dataset_overview.log
+.timer on
 .echo on
 
 -- =========================================================
@@ -68,6 +66,6 @@ FROM high_volume_for_hire_vehicle_raw;
 -- RUNTIME ENVIRONMENT CLEANUP
 -- =========================================================
 
-.log off
 .echo off
 .timer off
+.bail off

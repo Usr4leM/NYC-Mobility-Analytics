@@ -147,14 +147,6 @@ analysis needs to be performed:
 .read sql/02_data_profiling/05_data_distribution.sql
 ```
 
-### Execution Logs
-
-Each script records its execution output in a dedicated log file under:
-
-``` text
-logs/data_profiling/
-```
-
 ## Outcome
 
 At the end of this phase, the project has an initial, structured
