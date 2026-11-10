@@ -46,14 +46,14 @@ FROM read_parquet(
 )
 LIMIT 10;
 
--- For-Hire Vehicle
+-- For-Hire Vehicle (FHV)
 SELECT *
 FROM read_parquet(
     'data/raw/for_hire_vehicle/*.parquet'
 )
 LIMIT 10;
 
--- High-Volume For-Hire Vehicle
+-- High-Volume For-Hire Vehicle (HVFHV)
 SELECT *
 FROM read_parquet(
     'data/raw/high_volume_for_hire_vehicle/*.parquet'

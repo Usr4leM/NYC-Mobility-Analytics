@@ -47,14 +47,14 @@ FROM read_parquet(
     'data/raw/green_taxi/*.parquet'
 );
 
--- For-Hire Vehicle
+-- For-Hire Vehicle (FHV)
 CREATE OR REPLACE VIEW for_hire_vehicle_raw AS
 SELECT *
 FROM read_parquet(
     'data/raw/for_hire_vehicle/*.parquet'
 );
 
--- High-Volume For-Hire Vehicle
+-- High-Volume For-Hire Vehicle (HVFHV)
 CREATE OR REPLACE VIEW high_volume_for_hire_vehicle_raw AS
 SELECT *
 FROM read_parquet(
