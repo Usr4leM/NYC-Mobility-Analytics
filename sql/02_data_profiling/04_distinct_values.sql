@@ -82,7 +82,7 @@ ORDER BY
     distinct_count DESC,
     distinct_percentage DESC;
 
--- For-Hire Vehicle
+-- For-Hire Vehicle (FHV)
 WITH distinct_counts AS (
     SELECT 
         COUNT(*) AS total_records,
@@ -105,7 +105,7 @@ ORDER BY
     distinct_count DESC,
     distinct_percentage DESC;
 
--- High-Volume For-Hire Vehicle
+-- High-Volume For-Hire Vehicle (HVFHV)
 WITH distinct_counts AS (
     SELECT 
         COUNT(*) AS total_records,

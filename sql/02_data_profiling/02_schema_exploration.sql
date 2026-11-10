@@ -51,10 +51,10 @@ DESCRIBE main.yellow_taxi_raw;
 -- Green Taxi
 DESCRIBE main.green_taxi_raw;
 
--- For-Hire Vehicle
+-- For-Hire Vehicle (FHV)
 DESCRIBE main.for_hire_vehicle_raw;
 
--- High-Volume For-Hire Vehicle
+-- High-Volume For-Hire Vehicle (HVFHV)
 DESCRIBE main.high_volume_for_hire_vehicle_raw;
 
 -- =========================================================

@@ -1,4 +1,4 @@
-# Phase 02 --- Data Profiling
+# Phase 02 - Data Profiling
 
 ## Overview
 

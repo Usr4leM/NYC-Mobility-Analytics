@@ -98,7 +98,7 @@ WITH base_prep AS (
 
     UNION ALL
 
-    -- For-Hire Vehicle
+    -- For-Hire Vehicle (FHV)
     FROM (
         SELECT
             'For-Hire Vehicle' AS dataset,
@@ -114,7 +114,7 @@ WITH base_prep AS (
 
     UNION ALL
 
-    -- High-Volume For-Hire Vehicle
+    -- High-Volume For-Hire Vehicle (HVFHV)
     FROM (
         SELECT
             'High-Volume For-Hire Vehicle' AS dataset,
@@ -251,7 +251,7 @@ WITH base_prep AS (
 
     UNION ALL
 
-    -- High-Volume For-Hire Vehicle
+    -- High-Volume For-Hire Vehicle (HVFHV)
     FROM (
         SELECT
             'High-Volume For-Hire Vehicle' AS dataset,
@@ -341,7 +341,7 @@ WITH base_prep AS (
 
     UNION ALL
 
-    -- For-Hire Vehicle
+    -- For-Hire Vehicle (FHV)
     FROM (
         SELECT
             'For-Hire Vehicle' AS dataset,
@@ -357,7 +357,7 @@ WITH base_prep AS (
 
     UNION ALL
 
-    -- High-Volume For-Hire Vehicle
+    -- High-Volume For-Hire Vehicle (HVFHV)
     FROM (
         SELECT
             'High-Volume For-Hire Vehicle' AS dataset,
@@ -432,7 +432,7 @@ WITH base_prep AS (
 
     UNION ALL
 
-    -- For-Hire Vehicle
+    -- For-Hire Vehicle (FHV)
     FROM (
         SELECT
             'For-Hire Vehicle' AS dataset,
@@ -448,7 +448,7 @@ WITH base_prep AS (
 
     UNION ALL
 
-    -- High-Volume For-Hire Vehicle
+    -- High-Volume For-Hire Vehicle (HVFHV)
     FROM (
         SELECT
             'High-Volume For-Hire Vehicle' AS dataset,
@@ -520,7 +520,7 @@ WITH base_prep AS (
 
     UNION ALL
 
-    -- For-Hire Vehicle
+    -- For-Hire Vehicle (FHV)
     FROM (
         SELECT
             'For-Hire Vehicle' AS dataset,
@@ -536,7 +536,7 @@ WITH base_prep AS (
 
     UNION ALL
 
-    -- High-Volume For-Hire Vehicle
+    -- High-Volume For-Hire Vehicle (HVFHV)
     FROM (
         SELECT
             'High-Volume For-Hire Vehicle' AS dataset,

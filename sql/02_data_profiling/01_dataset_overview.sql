@@ -48,7 +48,7 @@ FROM green_taxi_raw
 
 UNION ALL
 
--- For-Hire Vehicle
+-- For-Hire Vehicle (FHV)
 SELECT
     'For-Hire Vehicle' AS dataset,
     COUNT(*) AS total_records
@@ -56,7 +56,7 @@ FROM for_hire_vehicle_raw
 
 UNION ALL
 
--- High-Volume For-Hire Vehicle
+-- High-Volume For-Hire Vehicle (HVFHV)
 SELECT
     'High-Volume For-Hire Vehicle' AS dataset,
     COUNT(*) AS total_records

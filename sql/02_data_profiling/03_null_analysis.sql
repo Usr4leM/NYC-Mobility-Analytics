@@ -81,7 +81,7 @@ ORDER BY
     null_count DESC,
     null_percentage DESC;
 
--- For-Hire Vehicle
+-- For-Hire Vehicle (FHV)
 WITH null_counts AS (
     SELECT 
         COUNT(*) AS total_records,
@@ -104,7 +104,7 @@ ORDER BY
     null_count DESC,
     null_percentage DESC;
 
--- High-Volume For-Hire Vehicle
+-- High-Volume For-Hire Vehicle (HVFHV)
 WITH null_counts AS (
     SELECT 
         COUNT(*) AS total_records,
